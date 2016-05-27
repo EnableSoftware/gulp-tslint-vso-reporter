@@ -1,0 +1,36 @@
+{
+  "name": "gulp-tslint-vso-reporter",
+  "version": "0.1.0",
+  "description": "A gulp-tslint reporter for Visual Studio Online and Team Foundation Server",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https:github.com/EnableSoftware/gulp-tslint-vso-reporter.git"
+  },
+  "bugs": {
+    "url": "https:github.com/EnableSoftware/gulp-tslint-vso-reporter/issues"
+  },
+  "keywords": [
+    "typescript",
+    "tslint",
+    "gulp-tslint",
+    "vso",
+    "reporter"
+  ],
+  "author": "Enable Software <hello@enable.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.5.1",
+    "sinon": "^1.17.4",
+    "typescript": "^1.8.10"
+  },
+  "peerDependencies": {
+    "gulp-tslint": "^5.0.0"
+  },
+  "scripts": {
+    "postinstall": "typings install",
+    "prepublish": "tsc",
+    "test": "npm run prepublish && mocha",
+    "lint": "tslint lib/*.ts test/*.ts index.ts --exclude **/*.d.ts"
+  }
+}
