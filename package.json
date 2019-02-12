@@ -20,7 +20,7 @@
   "author": "Enable Software <hello@enable.com>",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^2.5.1",
+    "mocha": "^5.2.0",
     "sinon": "^1.17.4",
     "typescript": "^1.8.10"
   },
