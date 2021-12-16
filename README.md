@@ -14,3 +14,4 @@ for Visual Studio Online and Team Foundation Server.
             .pipe(tslint())
             .pipe(tslint.report(vsoReporter));
     });
+
